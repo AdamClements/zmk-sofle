@@ -27,7 +27,7 @@
               &kp LALT &kp LGUI &mo 1 &kp RET &kp RET     &kp SPACE &kp SPACE &mo 2 &kp LBKT &kp RBKT
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
