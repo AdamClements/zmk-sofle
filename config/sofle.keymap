@@ -41,7 +41,7 @@
  &trans          &kp Q        &kp W         &kp E        &kp R    &kp T                                 &kp Y        &kp U         &kp I        &kp O                  &kp P  &trans
  &trans  &bhm LSHIFT A  &bhm LALT S  &bhm LCTRL D  &bhm LGUI F    &kp G                                 &kp H  &bhm RGUI J  &bhm RCTRL K  &bhm RALT L  &bhm RSHIFT SEMICOLON  &trans
  &trans          &kp Z        &kp X         &kp C        &kp V    &kp B  &kp C_MUTE      &none          &kp N        &kp M     &kp COMMA      &kp DOT               &kp FSLH  &trans
-                             &trans        &trans        &mo 2  &kp RET     &kp RET  &kp SPACE      &kp SPACE        &mo 1        &trans       &trans
+                             &trans        &trans        &tog 1  &kp RET     &kp RET  &kp SPACE      &kp SPACE        &mo 2        &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp PG_UP PG_DN>;
@@ -51,7 +51,7 @@
             bindings = <
  &trans        &trans        &trans        &trans        &trans         &trans                        &trans        &trans           &trans        &trans            &trans  &trans
  &trans     &kp GRAVE        &trans    &kp KP_DOT        &trans         &trans                        &trans     &kp MINUS        &kp EQUAL      &kp RBKT          &kp LBKT  &trans
- &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0  &trans
+ &trans  &bhm LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0  &trans
  &trans         &kp Z        &trans        &trans        &trans  &kp BACKSLASH  &trans  &trans  &kp QUESTION   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS  &kp SINGLE_QUOTE  &trans
                              &trans        &trans        &trans         &trans  &trans  &trans        &trans        &trans           &trans        &trans
             >;
