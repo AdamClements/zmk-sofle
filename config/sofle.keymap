@@ -23,9 +23,10 @@
                 <&kp>;
         };
     };
-    
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
+
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
@@ -49,11 +50,11 @@
 
         num_layer {
             bindings = <
- &trans        &trans        &trans        &trans        &trans         &trans                        &trans        &trans           &trans        &trans            &trans  &trans
- &trans     &kp GRAVE        &trans    &kp KP_DOT        &trans         &trans                        &trans     &kp MINUS        &kp EQUAL      &kp RBKT          &kp LBKT  &trans
- &trans  &bhm LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0  &trans
- &trans         &kp Z        &trans        &trans        &trans  &kp BACKSLASH  &trans  &trans  &kp QUESTION   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS  &kp SINGLE_QUOTE  &trans
-                             &trans        &trans        &trans         &trans  &trans  &trans        &trans        &trans           &trans        &trans
+ &trans                &trans        &trans        &trans        &trans         &trans                        &trans        &trans           &trans        &trans               &trans  &trans
+ &trans             &kp GRAVE        &trans    &kp KP_DOT        &trans         &trans                        &trans     &kp MINUS        &kp EQUAL      &kp RBKT             &kp LBKT  &trans
+ &trans  &bhm LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &bhm RIGHT_SHIFT N0  &trans
+ &trans                 &kp Z        &trans        &trans        &trans  &kp BACKSLASH  &trans  &trans  &kp QUESTION   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp SINGLE_QUOTE  &trans
+                                     &trans        &trans        &trans         &trans  &trans  &trans        &trans        &trans           &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -61,11 +62,11 @@
 
         fn_layer {
             bindings = <
- &trans      &trans    &trans     &trans  &trans  &trans                      &trans      &trans       &trans    &trans         &trans  &trans
- &trans      &kp F1    &kp F2     &kp F3  &kp F4  &kp F5                      &kp F6      &kp F8      &kp F10   &kp F11        &kp F12  &trans
- &trans  &kp ESCAPE    &kp UP     &trans  &trans  &trans                  &kp INSERT  &kp DELETE  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN  &trans
- &trans    &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans    &kp HOME     &kp END     &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-                       &trans     &trans  &trans  &trans  &trans  &trans      &trans      &trans       &trans    &trans
+ &trans    &trans    &trans     &trans  &trans  &trans                       &trans   &trans       &trans    &trans         &trans  &trans
+ &trans   &kp ESC    &trans     &trans  &trans  &trans                  &kp K_POWER   &trans       &trans    &trans  &kp BACKSPACE  &trans
+ &trans    &trans    &kp UP     &trans  &trans  &trans                   &kp INSERT  &kp DEL  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN  &trans
+ &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans     &kp HOME  &kp END     &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+                     &trans     &trans  &trans  &trans  &trans  &trans       &trans   &trans       &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
@@ -73,11 +74,11 @@
 
         meh_layer {
             bindings = <
- &trans       &trans  &trans    &trans      &trans       &trans                      &trans         &trans        &trans                &trans                 &trans  &trans
- &trans  &kp K_POWER  &trans    &trans      &trans       &trans                  &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3  &trans
- &trans     &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                   &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
- &trans   &caps_word  &trans    &trans      &trans       &trans  &trans  &trans      &trans         &trans        &trans                &trans                 &trans  &trans
-                      &trans    &trans      &trans       &trans  &trans  &trans      &trans         &trans        &trans                &trans
+ &trans       &trans  &trans  &trans  &trans  &kp F6                      &kp F7        &trans        &trans        &trans        &trans  &trans
+ &trans  &kp K_POWER  &trans  &trans  &trans  &trans                  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans
+ &trans       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                      &kp F8        &kp F9       &kp F10       &kp F11       &kp F12  &trans
+ &trans   &caps_word  &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans        &trans        &trans  &trans
+                      &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans        &trans        &trans
             >;
         };
     };
