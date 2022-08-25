@@ -53,7 +53,7 @@
  &trans                &trans        &trans        &trans        &trans         &trans                        &trans        &trans           &trans        &trans               &trans  &trans
  &trans             &kp GRAVE        &trans    &kp KP_DOT        &trans         &trans                        &trans     &kp MINUS        &kp EQUAL      &kp RBKT             &kp LBKT  &trans
  &trans  &bhm LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5                  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &bhm RIGHT_SHIFT N0  &trans
- &trans                 &kp Z        &trans        &trans        &trans  &kp BACKSLASH  &trans  &trans  &kp QUESTION   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp SINGLE_QUOTE  &trans
+ &trans                 &kp Z        &trans        &trans        &trans  &kp BACKSLASH  &trans  &trans      &kp LBKT   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp SINGLE_QUOTE  &trans
                                      &trans        &trans        &trans         &trans  &trans  &trans        &trans        &trans           &trans        &trans
             >;
 
