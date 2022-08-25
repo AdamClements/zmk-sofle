@@ -62,11 +62,11 @@
 
         fn_layer {
             bindings = <
- &trans    &trans    &trans     &trans  &trans  &trans                       &trans   &trans       &trans    &trans         &trans  &trans
- &trans   &kp ESC    &trans     &trans  &trans  &trans                  &kp K_POWER   &trans       &trans    &trans  &kp BACKSPACE  &trans
- &trans    &trans    &kp UP     &trans  &trans  &trans                   &kp INSERT  &kp DEL  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN  &trans
- &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans     &kp HOME  &kp END     &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-                     &trans     &trans  &trans  &trans  &trans  &trans       &trans   &trans       &trans    &trans
+ &trans    &trans    &trans     &trans  &trans  &trans                       &trans      &trans       &trans    &trans         &trans  &trans
+ &trans   &kp ESC    &trans     &trans  &trans  &trans                  &kp K_POWER      &trans       &trans    &trans  &kp BACKSPACE  &trans
+ &trans    &trans    &kp UP     &trans  &trans  &trans                      &kp DEL  &kp INSERT  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN  &trans
+ &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans  &trans  &trans     &kp HOME     &kp END     &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+                     &trans     &trans  &trans  &trans  &trans  &trans       &trans      &trans       &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>;
