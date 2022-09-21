@@ -1,0 +1,19 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_AQUILA_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Aquila"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_AQUILA_LEFT || SHIELD_AQUILA_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
