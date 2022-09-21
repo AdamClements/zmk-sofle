@@ -1,9 +1,9 @@
 file_format: "1"
 id: aquila
-name: Aquila/Sweep
+name: Aquila
 type: shield
-url: https://github.com/davidphilipbarr/Sweep
-requires: [pro_micro]
+url: https://github.com/AdamClements/zmk-aquila
+requires: [nice_nano_v2]
 exposes: [i2c_oled]
 features:
   - keys
