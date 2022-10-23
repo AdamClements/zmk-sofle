@@ -19,8 +19,6 @@ config ZMK_SPLIT
 endif
 
 
-if SHIELD_AQUILA_RIGHT
-
 if ZMK_DISPLAY
 
 config I2C
@@ -50,5 +48,3 @@ choice LVGL_COLOR_DEPTH
 endchoice
 
 endif # LVGL
-
-endif
