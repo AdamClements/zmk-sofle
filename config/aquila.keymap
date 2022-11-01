@@ -31,8 +31,14 @@ combo_##name {                        \
 / {
 	combos {
 		compatible = "zmk,combos";
-		COMBO(lbkt,   &kp LBKT,     0 1)
-		COMBO(rbkt,   &kp RBKT,     19 20)
+		COMBO(lbkt,   &kp MINUS,     0 1)
+		COMBO(rbkt,   &kp EQUAL,     8 9)
+
+		COMBO(lbrc,   &kp LS(MINUS),     2 3)
+		COMBO(rbrc,   &kp LS(EQUAL),     6 7)
+
+		COMBO(lprn,   &kp LS(NUMBER_9),     4 14)
+		COMBO(rprn,   &kp LS(NUMBER_0),     5 16)
 
 		//COMBO(vol_up, &kp C_VOL_UP,  9 19)
 		//COMBO(vol_dn, &kp C_VOL_DN, 19 29)
