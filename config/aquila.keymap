@@ -7,14 +7,46 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define TAPPING_TERM 210
+#define QUICK_TAP    150
+
+&mt {
+	flavor = "balanced";
+	tapping-term-ms = <TAPPING_TERM>;
+	quick-tap-ms = <QUICK_TAP>;
+};
+
+#define COMBO(name, keypress, keypos) \
+combo_##name {                        \
+	timeout-ms = <30>;                \
+	bindings = <keypress>;            \
+	key-positions = <keypos>;         \
+};
+/* Combo key positions
+ 0  1  2  3  4         5  6  7  8  9
+10 11 12 13 14        15 16 17 18 19
+20 21 22 23 24        25 26 27 28 29
+			30 31  32 33             */
+
+/ {
+	combos {
+		compatible = "zmk,combos";
+		COMBO(lbkt,   &kp LBKT,     0 1)
+		COMBO(rbkt,   &kp RBKT,     19 20)
+
+		//COMBO(vol_up, &kp C_VOL_UP,  9 19)
+		//COMBO(vol_dn, &kp C_VOL_DN, 19 29)
+	};
+};
+
 / {
     behaviors {
         bhm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
+            tapping-term-ms = <TAPPING_TERM>;
+            quick-tap-ms = <QUICK_TAP>;
             global-quick-tap;
             flavor = "tap-preferred";
             bindings =
@@ -51,7 +83,7 @@
         default_layer {
             bindings = <
            &kp Q        &kp W         &kp E        &kp R    &kp T                                 &kp Y        &kp U         &kp I        &kp O                  &kp P  
-   &bhm LSHIFT A  &bhm LALT S  &bhm LCTRL D  &bhm LGUI F    &kp G    &kp TAB      &kp BACKSPACE   &kp H  &bhm RGUI J  &bhm RCTRL K  &bhm RALT L  &bhm RSHIFT SEMICOLON  
+   &mt LSHIFT A  &bhm LALT S  &bhm LCTRL D  &bhm LGUI F    &kp G    &kp TAB      &kp BACKSPACE   &kp H  &bhm RGUI J  &bhm RCTRL K  &bhm RALT L  &bhm RSHIFT SEMICOLON  
            &kp Z        &kp X         &kp C        &kp V    &kp B    &kp C_MUTE      &none        &kp N        &kp M     &kp COMMA      &kp DOT               &kp FSLH  
                                                 &mo 1   &kp RET                               &kp SPACE    &mo 2 
             >;
@@ -62,8 +94,8 @@
         num_layer {
             bindings = <
               &kp GRAVE        &trans    &kp KP_DOT        &trans         &trans                          &trans     &kp MINUS        &kp EQUAL      &kp RBKT             &kp LBKT  
-      &bhm LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &trans  &trans   &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &bhm RIGHT_SHIFT N0  
-                  &kp Z        &trans        &trans        &trans  &kp BACKSLASH       &trans  &trans    &kp LBKT   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp SINGLE_QUOTE  
+      &mt LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &trans  &trans   &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &mt RIGHT_SHIFT N0  
+                  &kp LS(Z)        &trans        &trans        &trans  &kp BACKSLASH       &trans  &trans    &kp LBKT   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp SINGLE_QUOTE  
                                                            &to 0         &trans                         &trans        &trans           
             >;
 
