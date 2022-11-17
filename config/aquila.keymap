@@ -88,8 +88,8 @@ combo_##name {                        \
 
         default_layer {
             bindings = <
-           &kp SINGLE_QUOTE        &kp COMMA         &kp DOT        &kp P    &kp Y                                 &kp F        &kp G         &kp C        &kp R                  &kp L  
-   &mt LSHIFT A  &bhm LALT O  &bhm LCTRL E  &bhm LGUI U    &kp I    &kp TAB      &kp BACKSPACE   &kp D  &bhm RGUI H  &bhm RCTRL T  &bhm RALT N  &bhm RSHIFT S  
+           &kp SINGLE_QUOTE     &kp COMMA         &kp DOT        &kp P    &kp Y                                 &kp F        &kp G         &kp C        &kp R                  &kp L  
+           &mt LSHIFT A         &bhm LALT O  &bhm LCTRL E  &bhm LGUI U    &kp I    &kp TAB      &kp BACKSPACE   &kp D  &bhm RGUI H  &bhm RCTRL T  &bhm RALT N  &bhm RSHIFT S  
            &kp SEMICOLON        &kp Q         &kp J        &kp K    &kp X    &caps_word      &kp DEL        &kp B        &kp M     &kp W      &kp V               &kp Z  
                                                 &mo 1   &kp RET                               &kp SPACE    &mo 2 
             >;
@@ -99,7 +99,7 @@ combo_##name {                        \
 
         num_layer {
             bindings = <
-              &kp GRAVE        &trans    &kp EQUAL        &trans         &trans                          &trans     &kp MINUS        &kp EQUAL      &kp RBKT             &kp LBKT  
+              &kp GRAVE        &trans    &trans        &trans         &trans                          &trans     &kp MINUS        &kp EQUAL       &kp LBKT  &kp RBKT            
       &mt LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &trans  &trans   &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &mt RIGHT_SHIFT N0  
                   &kp LS(SEMICOLON)        &trans        &trans        &trans  &kp BACKSLASH       &trans  &kp DEL    &kp SLASH   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp SINGLE_QUOTE  
                                                            &to 0         &trans                         &trans        &trans           
@@ -110,7 +110,7 @@ combo_##name {                        \
 
         fn_layer {
             bindings = <
-      &kp ESC  &kp K_PREV  &kp K_NEXT  &kp K_PLAY_PAUSE  &trans                    &trans      &trans       &trans    &trans  &kp BACKSPACE  
+      &kp ESC  &kp K_PREV  &kp K_NEXT  &kp K_PLAY_PAUSE  &trans                    &trans      &trans       &trans    &trans  &trans  
    &caps_word      &kp UP      &trans            &trans  &trans    &trans  &kp C_VOL_UP  &kp DEL  &kp INSERT  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN  
      &kp LEFT    &kp DOWN   &kp RIGHT            &trans  &trans    &trans  &kp C_VOL_DN  &kp HOME     &kp END     &kp LEFT  &kp DOWN      &kp RIGHT  
                                                 &trans  &trans                     &trans      &to 0       
