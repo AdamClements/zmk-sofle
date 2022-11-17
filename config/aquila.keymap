@@ -99,9 +99,9 @@ combo_##name {                        \
 
         num_layer {
             bindings = <
-              &kp GRAVE        &trans    &trans        &trans         &trans                          &trans     &kp MINUS        &kp EQUAL       &kp LBKT  &kp RBKT            
+              &kp GRAVE        &trans    &trans        &kp KP_PLUS         &kp KP_MINUS              &trans     &kp MINUS        &kp EQUAL       &kp LBKT  &kp RBKT            
       &mt LSHIFT NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5    &trans  &trans   &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8  &kp NUMBER_9  &mt RIGHT_SHIFT N0  
-                  &kp LS(SEMICOLON)        &trans        &trans        &trans  &kp BACKSLASH       &trans  &kp DEL    &kp SLASH   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp SINGLE_QUOTE  
+                  &kp LS(SEMICOLON)        &trans        &trans        &trans  &kp BACKSLASH       &trans  &kp DEL    &kp SLASH   &kp KP_PLUS  &kp KP_ASTERISK  &kp KP_MINUS     &kp MINUS  
                                                            &to 0         &trans                         &trans        &trans           
             >;
 
